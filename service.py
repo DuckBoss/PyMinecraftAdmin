@@ -94,7 +94,7 @@ class MCServerAdmin:
                 self.exit()
                 return
             elif cmd_input[0] != "/":
-                resp = cmd_input
+                resp = f"> {cmd_input}"
                 cmd_input = f"say {cmd_input}"
                 self.mcr_instance.command(cmd_input)
             else:
