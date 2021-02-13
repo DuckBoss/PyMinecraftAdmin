@@ -10,11 +10,11 @@ if __name__ == "__main__":
     required_args = parser.add_argument_group("Required Arguments")
     required_args.add_argument('-ip', dest='server_ip', required=True, default='127.0.0.1',
                                help='Enter the Minecraft Server IP')
-    required_args.add_argument('-port', dest='server_port', required=True, default=25575,
+    required_args.add_argument('-rcon_port', dest='rcon_port', required=True, default=25575,
                                help='Enter the Minecraft Server RCON Port')
-    required_args.add_argument('-pass', dest='server_password', required=True, default=None,
+    required_args.add_argument('-rcon_pass', dest='server_password', required=True, default=None,
                                help='Enter the Minecraft Server RCON password')
 
 
     args = parser.parse_args()
-    service = MCServerAdmin(args.server_ip, args.server_port, args.server_password)
+    service = MCServerAdmin(args.server_ip, args.rcon_port, args.server_password)
