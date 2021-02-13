@@ -8,8 +8,6 @@ class MCServerAdmin:
     def __init__(self, ip=None, rcon_port=None, rcon_pass=None):
         self.tk_window = tk.Tk()
         self.tk_style = ttk.Style(self.tk_window)
-        self.tk_window.call('source', 'azure/azure.tcl')
-        self.tk_style.theme_use('azure')
         self.tk_window.withdraw()
 
         if not ip and not rcon_port and not rcon_pass:
@@ -28,7 +26,7 @@ class MCServerAdmin:
         commandInput = ttk.Entry(self.tk_window, width=50)
         commandInput.grid(column=0, row=1, padx=10, pady=10, sticky='w')
         sendCommandButton = ttk.Button(self.tk_window, command=lambda: self.processCommand(commandInput.get()) or commandInput.delete(0, len(commandInput.get())),
-                                       text='Send Command', style='Accentbutton')
+                                       text='Send Command')
         sendCommandButton.grid(column=0, row=2, padx=10, pady=10, sticky='w')
         self.tk_window.bind('<Return>', lambda x: self.processCommand(commandInput.get()) or commandInput.delete(0, len(commandInput.get())))
 
@@ -56,7 +54,7 @@ class MCServerAdmin:
 
         connectButton = ttk.Button(self.tk_window, command=lambda: self.connectToServer(
             serverIPInput.get(), rconPortInput.get(), rconPasswordInput.get()
-        ), text='Connect to Server', style='Accentbutton')
+        ), text='Connect to Server')
         connectButton.grid(column=0, row=4, padx=10, pady=10, sticky='w')
         self.tk_window.bind('<Return>', lambda: self.connectToServer(
             serverIPInput.get(), rconPortInput.get(), rconPasswordInput.get()
@@ -82,8 +80,6 @@ class MCServerAdmin:
         self.tk_window.destroy()
         self.tk_window = tk.Tk()
         self.tk_style = ttk.Style(self.tk_window)
-        self.tk_window.call('source', 'azure/azure.tcl')
-        self.tk_style.theme_use('azure')
 
     def processCommand(self, command):
         if self.mcr_instance:
