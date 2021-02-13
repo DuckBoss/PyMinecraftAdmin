@@ -8,7 +8,7 @@
 - <code>pip install -r requirements.txt</code>
 
 ### Usage
-1) Run the folder module in python with the server IP/Port and rcon password as launch parameters:
+1) Run the folder module in python with the server IP, rcon port and rcon password as launch parameters:
 ```
 > python PyMineCraftAdmin/ -ip <my_server_ip> -rcon_port <my_rcon_port> -rcon_pass <my_rcon_password>
 
