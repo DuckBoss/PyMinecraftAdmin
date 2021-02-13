@@ -11,7 +11,6 @@
 1) Run the folder module in python with the server IP/Port and rcon password as launch parameters:
 ```
 > python PyMineCraftAdmin/ -ip <my_server_ip> -rcon_port <my_rcon_port> -rcon_pass <my_rcon_password>
-> 
 ```
 <b>Note: The rcon port/password can be configured in your server's `server.properties` file.</b>
 
