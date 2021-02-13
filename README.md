@@ -5,7 +5,7 @@
 
 ### Requirements
 - Python 3.7+
-- <code>pip install mcrcon</code>
+- <code>pip install -r requirements.txt</code>
 
 ### Usage
 1) Run the folder module in python with the server IP/Port and rcon password as launch parameters:
