@@ -3,7 +3,7 @@
 <br>
 <br>
 
-###About
+### About
 This python script works great to manage your Minecraft server remotely by using Minecraft's built-in rcon protocol.
 To enable the rcon protocol for your server, check the server's `server.properties` file.
 
