@@ -114,3 +114,10 @@ dmypy.json
 
 # PyCharm
 .idea/
+
+# Custom
+build/
+dist/
+*.bat
+.spec
+azure/
