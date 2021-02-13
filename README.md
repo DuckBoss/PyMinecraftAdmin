@@ -21,6 +21,10 @@
 <b>Note: The rcon port/password can be configured in your server's `server.properties` file.</b>
 #### Windows Executable -
 ```
+double click the pyminecraftadmin.exe file
+
+(OR)
+
 > pyminecraftadmin.exe -ip <my_server_ip> -rcon_port <my_rcon_port> -rcon_pass <my_rcon_password>
 ```
 
