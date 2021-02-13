@@ -8,6 +8,7 @@
 - <code>pip install -r requirements.txt</code>
 
 ### Usage
+#### Python Script -
 1) Run the folder module in python with the server IP, rcon port and rcon password as launch parameters:
 ```
 > python PyMineCraftAdmin/ -ip <my_server_ip> -rcon_port <my_rcon_port> -rcon_pass <my_rcon_password>
@@ -18,6 +19,10 @@
 > python __main__.py -ip <my_server_ip> -rcon_port <my_rcon_port> -rcon_pass <my_rcon_password>
 ```
 <b>Note: The rcon port/password can be configured in your server's `server.properties` file.</b>
+#### Windows Executable -
+```
+> pyminecraftadmin.exe -ip <my_server_ip> -rcon_port <my_rcon_port> -rcon_pass <my_rcon_password>
+```
 
 ### Examples
 - Login to the Minecraft server rcon connection:<br>
