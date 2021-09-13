@@ -18,7 +18,7 @@ To enable the rcon protocol for your server, check the server's `server.properti
 #### Python Script -
 1) Run the folder module in python with the server IP, rcon port and rcon password as launch parameters:
 ```
-> python PyMineCraftAdmin/ -ip <my_server_ip> -rcon_port <my_rcon_port> -rcon_pass <my_rcon_password>
+> python PyMinecraftAdmin/ -ip <my_server_ip> -rcon_port <my_rcon_port> -rcon_pass <my_rcon_password>
 
 (OR)
 
