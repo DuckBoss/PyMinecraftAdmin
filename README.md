@@ -1,4 +1,4 @@
-<h2 align="center"> PyMineCraftAdmin </h2>
+<h2 align="center"> PyMinecraftAdmin </h2>
 <p align="center">A simple GUI utility to remotely control a MineCraft Server using the RCON protocol</p>
 <br>
 <br>
